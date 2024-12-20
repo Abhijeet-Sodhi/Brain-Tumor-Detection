@@ -24,6 +24,10 @@ https://github.com/user-attachments/assets/11c081f7-b7e5-44b9-aa2c-b6f4ef65d2fe
 
 **index.html & styles.css:** Define the user interface and styling for the web application.
 
+**Datasets:** includes 1500 tumor and 1500 non-tumor images (total 3000 images).
+*Training Set:* 2400 images (1200 with "no" and 1200 with "yes").
+*Testing Set:* 600 images (300 with "no" and 300 with "yes"). 
+
 ## Functionality ⚙️
 **Training:**
 - Trains a CNN with three convolutional layers to classify MRI images into "Tumor Detected" or "No Tumor Detected."
