@@ -8,7 +8,9 @@ The base code for this project was adapted from KNOWLEDGE DOCTOR. While the orig
 
 ## Demo 🎬
 
+**Training:**
 
+**Inference:**
 
 ## The Code files: 📄
 
@@ -51,6 +53,8 @@ To run this project, ensure the following dependencies are installed:
 - Open your browser and navigate to **http://127.0.0.1:5000** to use the web interface.
 
 ## Theory: 💡
+
+![image](https://github.com/user-attachments/assets/7d95a7a5-946b-4d10-be43-2ffe93cd4a6c)
 
 #### Input Layer: Reading the MRI Image
 - The input to the CNN is an MRI image resized to a fixed dimension (e.g., 64x64x3).
