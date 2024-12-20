@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Brain Tumor Detection</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="file">Upload an Image:</label><br>
+            <input type="file" name="file" id="file" required><br><br>
+            <button type="submit">Predict</button>
+        </form>
+        <div class="image-preview">
+            {% if image_path %}
+                <img src="{{ url_for('uploaded_file', filename=image_path) }}" alt="Uploaded Image Preview">
+            {% endif %}
+        </div>
+        {% if prediction %}
+        <div class="result {{ status_class }}">
+            Result: {{ prediction }}
+        </div>
+        {% endif %}
+        {% if message %}
+            <div class="result">{{ message }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
