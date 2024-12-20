@@ -51,3 +51,34 @@ To run this project, ensure the following dependencies are installed:
 - Open your browser and navigate to **http://127.0.0.1:5000** to use the web interface.
 
 ## Theory: 💡
+
+# Input Layer: Reading the MRI Image
+- The input to the CNN is an MRI image resized to a fixed dimension (e.g., 64x64x3).
+- Each pixel's intensity value is normalized to a range of **[0, 1]** to standardize the input and facilitate faster learning.
+
+# Feature Extraction: Convolutional Layers
+- **Convolution Operation:** Small filters (kernels) slide over the image to detect basic patterns like edges, corners, or textures.
+- **Activation Function (ReLU):** ReLU adds non-linearity, allowing the model to learn complex patterns beyond simple ones.
+- **Pooling (MaxPooling):** Reduces the image size by keeping only the most important features, making the model faster and more efficient.
+- **Example:** The first convolutional layer detects simple edges, and deeper layers identify more complex patterns like shapes or regions related to tumors.
+
+# Flattening: Converting Features to a Single Vector
+- The output of the convolutional and pooling layers is a **multi-dimensional feature map**.
+- This map is flattened into a **one-dimensional vector** to connect with the dense (fully connected) layers for classification.
+
+# Classification: Fully Connected Layers
+- The dense layers act as the decision-making part of the network.
+- They take the extracted features and learn to associate them with specific labels:
+  **Class 0:** No Tumor Detected.
+  **Class 1:** Tumor Detected.
+- The final output is a vector of probabilities (e.g., [0.8, 0.2]), where each value indicates the likelihood of belonging to a specific class.
+
+# Softmax Layer: Output Interpretation
+- The **softmax activation function** ensures that the output probabilities for the two classes sum to 1.
+- The model predicts the class with the highest probability.
+
+# Inference: Using the Model
+- During prediction, the trained model processes a new MRI image, extracts features, and classifies the image based on patterns it learned during training.
+- If the detected patterns match those of tumor-affected images, the model predicts **"Tumor Detected."** Otherwise, it predicts **"No Tumor Detected."**
+
+
