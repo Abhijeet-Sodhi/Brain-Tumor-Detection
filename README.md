@@ -6,6 +6,8 @@ training a convolutional neural network (CNN) to classify brain MRI images as ha
 **KNOWLEDGE DOCTOR**.
 The base code for this project was adapted from KNOWLEDGE DOCTOR. While the original concept and code were used as a foundation, several modifications were made to suit the specific functionality and features of this Brain Tumor detection model.
 
+**Dataset:** https://www.kaggle.com/datasets/ahmedhamada0/brain-tumor-detection?resource=download
+
 ## Demo 🎬
 
 **Training:** ✨
