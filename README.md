@@ -8,9 +8,12 @@ The base code for this project was adapted from KNOWLEDGE DOCTOR. While the orig
 
 ## Demo 🎬
 
-**Training:**
+**Training:** ✨
+https://github.com/user-attachments/assets/78811cc6-6e64-4a5b-883a-7a0f1b72cf04
 
-**Inference:**
+**Inference:** ✨
+https://github.com/user-attachments/assets/11c081f7-b7e5-44b9-aa2c-b6f4ef65d2fe
+
 
 ## The Code files: 📄
 
